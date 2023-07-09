@@ -1,16 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Baloo Thambi 2";
   margin: 20px;
   padding: 0;
 }
 
 h1 {
+  font-family: "Baloo Thambi 2", cursive;
   margin-top: 0;
-  font-size: 22px;
+  font-size: 3rem;
+  text-align: center;
 }
 
 h2 {
@@ -46,20 +50,15 @@ ul {
   padding-left: 20px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
+.board-row {
+  display: flex;
+  justify-content: center;
 }
 
 .square {
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #999;
-  float: left;
+  /* float: left; */
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
@@ -67,7 +66,6 @@ body {
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
-  text-align: center;
   width: 34px;
 }
 
@@ -79,6 +77,8 @@ body {
 
 .status {
   margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.5rem;
 }
 .game {
   display: flex;
