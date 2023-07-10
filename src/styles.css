@@ -2,44 +2,34 @@
 
 * {
   box-sizing: border-box;
+  background-color: #88BDBC;
+  --color1: #88BDBC;
+  --color2: #254E58;
+  --color3: #112D32;
+  --color4: #4F4A41;
+  --color5: #6E6658;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
 }
 
 body {
   font-family: "Baloo Thambi 2";
   margin: 20px;
   padding: 0;
+  color: white;
 }
 
 h1 {
   font-family: "Baloo Thambi 2", cursive;
-  margin-top: 0;
-  font-size: 3rem;
+  margin-top: 5rem;
+  font-size: 5rem;
   text-align: center;
-}
-
-h2 {
-  margin-top: 0;
-  font-size: 20px;
-}
-
-h3 {
-  margin-top: 0;
-  font-size: 18px;
-}
-
-h4 {
-  margin-top: 0;
-  font-size: 16px;
-}
-
-h5 {
-  margin-top: 0;
-  font-size: 14px;
-}
-
-h6 {
-  margin-top: 0;
-  font-size: 12px;
+  color: white;
 }
 
 code {
@@ -50,23 +40,28 @@ ul {
   padding-left: 20px;
 }
 
-.board-row {
+/* .board-row {
   display: flex;
   justify-content: center;
-}
+} */
 
 .square {
-  background: #ffffff;
-  border: 1px solid #999;
-  /* float: left; */
-  font-size: 24px;
+  background: var(--color2);
+  border: 1px solid var(--color3);
+  float: left;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 6rem;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
-  width: 34px;
+  width: 6rem;
+}
+
+.square:hover {
+  background: var(--color3);
+  cursor: pointer;
 }
 
 .board-row:after {
@@ -77,14 +72,58 @@ ul {
 
 .status {
   margin-bottom: 10px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 1.5rem;
 }
 .game {
   display: flex;
+  justify-content: center;
   flex-direction: row;
 }
 
-.game-info {
+.game-board {
+  margin-top: 2rem;
   margin-left: 20px;
 }
+
+.game-info {
+  margin-top: 2rem;
+  margin-left: 20px;
+}
+
+button {
+  background-color: var(--color1);
+  border: 1px solid white;
+  color: white;
+  width: 7rem;
+  height: 2.5rem;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: var(--color2);
+  cursor: pointer;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button--start {
+  background-color: var(--color3);
+  border: 1px solid var(--color2);
+  width: 10rem;
+  height: 5rem;
+  font-size: 2rem;
+}
+
+.button--start:hover,
+.button--start:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--color3);
+  transform: translateY(-0.25em);
+}
+
+
